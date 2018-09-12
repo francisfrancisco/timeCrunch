@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="recipes.js" defer></script>
+  </head>
+  <body>
+    <form class="" action="recipes.html" method="post">
+      time(in minutes)<input id="minutesMin"type="number" name="" value="" required>
+      time(in minutes)<input id="minutesMax"type="number" name="" value="" required>
+      <br>
+      Protein
+      <br>
+      Chicken<input type="radio" name="Protein" value="Chicken">
+      Beef<input type="radio" name="Protein" value="Beef">
+      Pork<input type="radio" name="Protein" value="Pork">
+      Seafood<input type="radio" name="Protein" value="Seafood">
+      Vegetarian<input type="radio" name="Protein" value="Vegetarian">
+      <br>
+      <input id="submitButton" type="submit" name="" value="search">
+    </form>
+    <p id="recipeResults"></p>
+  </body>
+</html>
