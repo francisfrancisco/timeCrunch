@@ -22,7 +22,7 @@ document.querySelector("#submitButton").addEventListener("click", (e) => {
     };
   };
   console.log(protein)
-  axios.get(`https://api.edamam.com/search?app_id=69c5928f&app_key=59ccc0030c83e07047705cb58d8d16ab&time=${mincookTime}-${cookTime}&q=${protein}`)
+  axios.get(`https://api.edamam.com/search?&time=${mincookTime}-${cookTime}&q=${protein}`)
     .then(result => {
       let recipes = result.data.hits
       console.log(recipes)
